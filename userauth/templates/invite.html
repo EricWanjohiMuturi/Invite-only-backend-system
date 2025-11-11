@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You're Invited!</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f9fafb; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px; margin:40px auto;">
+    <tr>
+      <td align="center">
+        <!-- Logo Section -->
+        <img src="#" alt="Insert your logo here using a CDN or self hosted" style="width:120px; margin-bottom:24px;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background: linear-gradient(to right, #2563eb, #3b82f6); border-radius:8px 8px 0 0; text-align:center; padding:30px; color:#ffffff;">
+        <h1 style="margin:0; font-size:28px; font-weight:700;">You're Invited!</h1>
+        <p style="margin:8px 0 0 0; font-size:16px;">Join The Expressmart Dashboard</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color:#ffffff; padding:30px; border-radius:0 0 8px 8px; box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+        <p style="font-size:16px; color:#111827; margin-bottom:16px;">Hello <strong>{{ email }}</strong>,</p>
+        <p style="font-size:16px; color:#111827; margin-bottom:24px;">
+          You have been invited as <strong>{{ role }}</strong> to join <strong>The Expressmart Dashboard</strong>. Click the button below to accept your invitation.
+        </p>
+        <p style="font-size:16px; color:#111827; margin-bottom:24px;">
+          This invitation will expire on <strong>{{ expires_at|date:"F j, Y, H:i" }}</strong>.
+        </p>
+        <p style="text-align:center; margin-bottom:24px;">
+          <a href="{{ accept_url }}" 
+             style="background-color:#2563eb; color:#ffffff; text-decoration:none; padding:14px 28px; border-radius:8px; font-weight:600; font-size:16px; display:inline-block;">
+            Accept Invitation
+          </a>
+        </p>
+        <hr style="border:none; border-top:1px solid #e5e7eb; margin:24px 0;">
+        <p style="font-size:14px; color:#6b7280; text-align:center;">
+          If you did not expect this invitation, you can safely ignore this email.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center; font-size:12px; color:#9ca3af; padding:20px 0;">
+        &copy; {{ now|date:"Y" }} The Dashboard. All rights reserved.
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
