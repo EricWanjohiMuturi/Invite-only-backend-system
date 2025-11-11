@@ -209,11 +209,11 @@ python manage.py show_urls
 
 🧾 Example Workflow
 
-1️⃣ Invite a User → /api/auth/invite/
-2️⃣ Accept Invite → /api/auth/accept-invite/
-3️⃣ Login and Get JWT Token → /api/auth/token/
-4️⃣ Access Protected Routes → /api/auth/me/
-5️⃣ Request Password Reset → /api/auth/password-reset-request/
+1. Invite a user — `POST /api/auth/invite/`
+2. Accept an invite — `POST /api/auth/accept-invite/`
+3. Login and get JWT token — `POST /api/auth/token/`
+4. Access protected routes (current user) — `GET /api/auth/me/`
+5. Request a password reset — `POST /api/auth/password-reset-request/`
 
 🧩 Postman Collection Setup
 
