@@ -33,7 +33,7 @@ Follow these steps to set up and run the project locally.
 
 ```bash
 git clone https://github.com/EricWanjohiMuturi/Invite-only-backend-system
-cd your-backend-repo
+cd Invite-only-backend-system
 ```
 
 2️⃣ Create and Activate a Virtual Environment
